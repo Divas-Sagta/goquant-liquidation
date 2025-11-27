@@ -115,22 +115,3 @@ Key docs are under `docs/`:
 * `DEPLOYMENT.md` – How to run locally and conceptual production deployment.
 * `TESTING.md` – How to run tests and what they cover.
 
----
-
-## Notes & Limitations
-
-This implementation focuses on:
-
-* Correct high-level liquidation flow and risk logic.
-* Separation between on-chain logic and off-chain orchestration.
-* Clear APIs and documentation.
-
-Some production concerns are intentionally simplified due to scope:
-
-* Position data source is mocked in the backend.
-* DB integration is schematized but not fully wired.
-* Oracle integration uses a stubbed price oracle.
-* Liquidation executor currently logs instead of sending real Solana transactions.
-
-These simplifications are documented for future extension.
-
